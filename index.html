@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una palabra para la historia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6b6b",
+                        "mint": "#7FFFBF",
+                        "lavender": "#EBE0EB",
+                        "vibrant-pink": "#FF0080",
+                        "vibrant-blue": "#00E5FF",
+                        "gold": "#FFD93D"
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "fun": ["Fredoka One", "cursive"]
+                    },
+                    boxShadow: {
+                        'neo': '0 6px 0px 0px rgba(0,0,0,1)',
+                        'neo-sm': '0 4px 0px 0px rgba(0,0,0,1)',
+                        'neo-mint': '0 8px 0px 0px #000000',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .font-display { font-family: 'Spline Sans', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        @keyframes bellRing {
+          0% { transform: rotate(0deg); }
+          10% { transform: rotate(15deg); }
+          20% { transform: rotate(-15deg); }
+          30% { transform: rotate(12deg); }
+          40% { transform: rotate(-12deg); }
+          50% { transform: rotate(8deg); }
+          60% { transform: rotate(-8deg); }
+          70% { transform: rotate(4deg); }
+          80% { transform: rotate(-4deg); }
+          90% { transform: rotate(2deg); }
+          100% { transform: rotate(0deg); }
+        }
+
+        .bell-notification {
+          animation: bellRing 1.5s ease-in-out infinite;
+          transform-origin: top center;
+          display: inline-block;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-50 text-slate-900">
+    <div id="root"></div>
+</body>
+</html>

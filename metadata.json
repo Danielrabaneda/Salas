@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Una palabra para la historia 4",
+  "description": "Un juego social colaborativo donde los usuarios crean historias épicas palabra por palabra en tiempo real.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
